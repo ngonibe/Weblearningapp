@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript Basics - WebLearningApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <h1>javascript Basics</h1>
+    <p>javascript makes your page interactive — responding to clicks, input, and more.</p>
+
+    <h2>1. Variables</h2>
+    <p>Variables store data using let, const, or var.</p>
+    <pre>let name = "John";
+const age = 20;</pre>
+    <p><strong>Try it:</strong> Create a variable with your own name and log it.</p>
+
+    <h2>2. Console Logging</h2>
+    <p>console.log() prints messages to the browser console — useful for checking your code.</p>
+    <pre>console.log("Hello World!");</pre>
+    <p><strong>Try it:</strong> Open the browser console (F12) and try logging your own message.</p>
+
+    <h2>3. Functions</h2>
+    <p>Functions are reusable blocks of code.</p>
+    <pre>function greet() {
+  alert("Hello!");
+}</pre>
+    <p><strong>Try it:</strong> Write a function that shows an alert with your name.</p>
+
+    <h2>4. Events</h2>
+    <p>Events let JavaScript respond to user actions, like clicks.</p>
+    <pre>button.addEventListener('click', () => {
+  alert("Button clicked!");
+});</pre>
+    <p><strong>Try it:</strong> Add a second button to your Home page that shows a different alert.</p>
+
+    <h2>5. Changing Content</h2>
+    <p>JavaScript can change what's on the page using the DOM.</p>
+    <pre>document.querySelector('h1').textContent = "New Title";</pre>
+
+    <h2>Mini Exercise</h2>
+    <p>Add a button that, when clicked, changes the heading text on this page to say "You clicked me!"</p>
+
+    <a href="lessons.html"><button>Back to Lessons</button></a>
+
+</body>
+</html>
