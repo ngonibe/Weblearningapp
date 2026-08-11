@@ -4,6 +4,8 @@
     <title>WebLearningApp</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1B2A4A">
 </head>
 
 <body>
@@ -15,11 +17,17 @@
     </nav>
 
     <h1>Welcome to WebLearningApp</h1>
+   <img src="images/home.jpg" alt="WebLearningApp home banner"style="max-width: 100%; height: auto;">
     <p>Learn html, css and javascript step by step.</p>
 
     <button>Start Learning</button>
 
     <script src="script.js"></script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/Weblearningapp/sw.js');
+  }
+</script>
 
 </body>
 </html>
